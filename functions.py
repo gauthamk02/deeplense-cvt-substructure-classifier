@@ -1,7 +1,5 @@
 import numpy as np
-import cv2
 import onnxruntime as rt
-from PIL import Image
 
 onnx_path = 'model/model.onnx'
 
