@@ -1,0 +1,3 @@
+*.pth
+flagged
+__pycache__
