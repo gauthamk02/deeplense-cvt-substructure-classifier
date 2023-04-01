@@ -14,5 +14,5 @@ def predict(img):
     pred = session.run([output_name], {input_name: img})[0]
     pred = np.exp(pred) / np.sum(np.exp(pred), axis=1, keepdims=True)
 
-    class_probs = {'No Substructure': str(pred[0][0]), 'Substructure': str(pred[0][1])}
+    class_probs = {'No Substructure': float(pred[0][0]), 'Substructure': float(pred[0][1])}
     return class_probs
